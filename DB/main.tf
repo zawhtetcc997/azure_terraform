@@ -56,7 +56,7 @@ resource "azurerm_private_endpoint" "priv_end_dr" {
     name = "db-end-dr"
     private_connection_resource_id = azurerm_mssql_server.drsqlsvr.id
     is_manual_connection = false
-    subresource_names = [ "sqlserver" ] #need to call for services what we use
+    subresource_names = [ "sqlserver" ]
   }
 }
 
