@@ -32,7 +32,7 @@ resource "azurerm_private_endpoint" "priv_end" {
     name = "db-end"
     private_connection_resource_id = azurerm_mssql_server.sqlsvr.id
     is_manual_connection = false
-    subresource_names = [ "sqlserver" ] #need to call for services what we use
+    subresource_names = [ "sqlserver" ]
   }
 }
 
